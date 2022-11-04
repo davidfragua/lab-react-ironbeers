@@ -8,11 +8,18 @@ import SingleBeer from './pages/SingleBeer';
 import RandomBeer from './pages/RandomBeer';
 import Error from './pages/Error';
 import NotFound from './pages/NotFound';
+import Navbar from './components/Navbar';
+import Header from './components/Header';
 
 function App() {
   return (
     <div className="App">
      
+     <Header />
+     {/* hay que quitar el header de la Home */}
+     <Navbar />
+
+
     <Routes>
 
     <Route path="/" element={ <Home /> }></Route>
