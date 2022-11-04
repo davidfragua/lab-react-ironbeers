@@ -15,6 +15,7 @@ function App() {
   return (
     <div className="App">
      
+     
      <Header />
      {/* hay que quitar el header de la Home */}
      <Navbar />
