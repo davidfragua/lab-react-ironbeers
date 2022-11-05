@@ -15,7 +15,7 @@ function App() {
   return (
     <div className="App">
      
-     
+
      <Header />
      {/* hay que quitar el header de la Home */}
      <Navbar />
@@ -23,15 +23,15 @@ function App() {
 
     <Routes>
 
-    <Route path="/" element={ <Home /> }></Route>
-    <Route path="/beers" element={ <ListBeers /> }></Route>
-    <Route path="/new-beer" element={ <NewBeer />}></Route>
-    <Route path="/single-beer" element={ <SingleBeer />}></Route>
-    <Route path="/random-beer" element={ <RandomBeer />}></Route>
+    <Route path="/" element={ <Home /> } />
+    <Route path="/beers" element={ <ListBeers /> } />
+    <Route path="/new-beer" element={ <NewBeer />} />
+    <Route path="/single-beer/:beerId" element={ <SingleBeer />} />
+    <Route path="/random-beer" element={ <RandomBeer />} />
     
     {/* rutas de errores */}
-    <Route path="/error" element={ <Error />}></Route>
-    <Route path="*" element={ <NotFound />}></Route>
+    <Route path="/error" element={ <Error />} />
+    <Route path="*" element={ <NotFound />} />
 
 
 

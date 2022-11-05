@@ -39,12 +39,12 @@ function ListBeers() {
         {list.map((eachBeer) => {
             return (
                 <div>
-                 <img src={eachBeer.image_url} alt="{eachBeer.name}" width={30}/>   
+                 <img src={eachBeer.image_url} alt={eachBeer.name} width={30}/>   
                 <p>Nombre: {eachBeer.name}</p>
                 <p>Tagline: {eachBeer.tagline}</p>
                 <p>Contributed by: {eachBeer.contributed_by}</p>
-                <Link to="/beers/:beerId">Ver detalles</Link>
-                {/* RECORDAR CAMBIAR EL ID EN LA URL */}
+                <Link to={`/single-beer/${eachBeer._id}`}>Ver detalles</Link>
+              
 
                 </div>
 
