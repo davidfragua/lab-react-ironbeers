@@ -16,9 +16,9 @@ function App() {
     <div className="App">
      
 
-     <Header />
-     {/* hay que quitar el header de la Home */}
-     <Navbar />
+     {/* <Header />
+    
+     <Navbar /> */}
 
 
     <Routes>
@@ -31,7 +31,7 @@ function App() {
     
     {/* rutas de errores */}
     <Route path="/error" element={ <Error />} />
-    <Route path="*" element={ <NotFound />} />
+    <Route path="*" element={ <NotFound />}></Route>
 
 
 

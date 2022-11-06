@@ -1,6 +1,8 @@
 import axios from "axios";
 import { useEffect } from "react";
 import { useState } from "react";
+import Header from "../components/Header";
+import Navbar from "../components/Navbar";
 
 function RandomBeer() {
   // crear el estado que almacena
@@ -34,6 +36,9 @@ function RandomBeer() {
 
   return (
     <div>
+      <Header />
+
+      <Navbar />
       <div>
         <img src={oneBeer.image_url} alt={oneBeer.name} width={50} />
         <h3>{oneBeer.name}</h3>
